@@ -1,0 +1,154 @@
+/* Estilo para el fondo general de la página */
+body {
+    background-color: #f4f7fc; /* Fondo suave y moderno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal que centra el formulario */
+.container {
+    max-width: 400px; /* Tamaño máximo del formulario */
+    width: 100%; /* Asegura que el formulario no se desborde */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo del formulario */
+.logo-container {
+    margin-bottom: 1.5rem; /* Espacio entre el logo y el título */
+}
+
+.logo {
+    width: 200px; /* Ajuste del tamaño del logo */
+    height: auto;
+}
+
+/* Título del formulario */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Estilo de los campos del formulario */
+input {
+    width: 100%; /* Los inputs ocupan todo el ancho disponible */
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9fafb;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto cuando el input es seleccionado */
+input:focus {
+    outline: none;
+    border-color: #3182ce; /* Borde azul */
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(49, 130, 206, 0.3); /* Sombra más destacada */
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3182ce; /* Azul para el botón */
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover en el botón */
+button:hover {
+    background-color: #2b6cb0; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Mensajes de error */
+.error-message {
+    background-color: #fff5f5;
+    color: #e53e3e;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Mensajes de éxito */
+.success-message {
+    background-color: #e6fffa;
+    color: #48bb78;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 80px; /* Ajuste del logo en pantallas pequeñas */
+    }
+}
+
+/* Estilos de etiquetas */
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+            .form-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            .form-group {
+                flex: 1 1 48%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group-full {
+                flex: 1 1 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-check {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
