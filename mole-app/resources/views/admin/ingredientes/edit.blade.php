@@ -4,7 +4,10 @@
 <div class="container">
     <h1>Editar Ingrediente</h1>
 
-    <a href="{{ route('admin.ingredientes.index') }}" class="btn btn-secondary mb-3">← Volver al listado</a>
+    <a href="{{ route('admin.ingredientes.index') }}" class="btn btn-outline-danger">
+        <i class="fas fa-arrow-left"></i> ← Volver al listado
+    </a>
+
 
     @if ($errors->any())
         <div class="error-message">

@@ -8,7 +8,6 @@
         <div class="success-message">{{ session('success') }}</div>
     @endif
 
-    <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary mb-3">← Volver al Dashboard</a>
     <a href="{{ route('admin.ingredientes.create') }}" class="btn btn-primary mb-3">+ Nuevo Ingrediente</a>
 
     <table class="table">
@@ -40,5 +39,9 @@
             @endforeach
         </tbody>
     </table>
+        <a href="{{ route('admin.dashboard') }}" class="btn btn-outline-danger">
+        <i class="fas fa-arrow-left"></i> Regresar al Dashboard
+    </a>
+
 </div>
 @endsection

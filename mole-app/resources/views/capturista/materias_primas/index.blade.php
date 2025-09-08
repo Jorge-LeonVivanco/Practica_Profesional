@@ -5,8 +5,8 @@
     <h1>Inventario de Materias Primas</h1>
 
     <!-- Botón para volver al dashboard -->
-    <a href="{{ route('capturista.dashboard') }}" class="btn btn-secondary mb-3">
-        ← Volver al Dashboard
+    <a href="{{ route('capturista.dashboard') }}" class="btn btn-outline-danger">
+            <i class="fas fa-arrow-left"></i>Volver al Dashboard
     </a>
 
     <table class="table">

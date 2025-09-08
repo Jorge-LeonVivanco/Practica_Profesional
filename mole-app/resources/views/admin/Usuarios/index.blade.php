@@ -8,10 +8,6 @@
         <div class="success-message">{{ session('success') }}</div>
     @endif
 
-    <a href="{{ route('admin.dashboard') }}" class="btn btn-outline-danger">
-        <i class="fas fa-arrow-left"></i> Regresar al Dashboard
-    </a>
-
     <a href="{{ route('admin.usuarios.create') }}" class="btn btn-primary mb-3">
         <i class="fas fa-plus-circle"></i> Nuevo Usuario
     </a>
@@ -47,5 +43,10 @@
             @endforeach
         </tbody>
     </table>
+
+        <a href="{{ route('admin.dashboard') }}" class="btn btn-outline-danger">
+        <i class="fas fa-arrow-left"></i> Regresar al Dashboard
+    </a>
+
 </div>
 @endsection

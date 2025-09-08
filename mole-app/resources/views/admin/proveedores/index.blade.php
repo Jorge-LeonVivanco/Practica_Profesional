@@ -45,9 +45,9 @@
             @endforeach
         </tbody>
     </table>
-        <!-- Botón para volver al dashboard -->
-    <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary mb-3">
-        ← Volver al Dashboard
+        
+    <a href="{{ route('admin.dashboard') }}" class="btn btn-outline-danger">
+        <i class="fas fa-arrow-left"></i> Volver al Dashboard
     </a>
 </div>
 @endsection

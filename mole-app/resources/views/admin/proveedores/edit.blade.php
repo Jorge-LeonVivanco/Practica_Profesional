@@ -31,6 +31,10 @@
         <textarea name="direccion" id="direccion" required>{{ $proveedor->direccion }}</textarea>
 
         <button type="submit"><i class="fas fa-save"></i> Actualizar Proveedor</button>
+
+        <a href="{{ route('admin.proveedores.index') }}" class="btn btn-outline-danger">
+            <i class="fas fa-arrow-left"></i> Volver al listado
+        </a>
     </form>
 </div>
 @endsection

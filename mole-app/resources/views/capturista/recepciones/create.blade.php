@@ -7,8 +7,8 @@
     <h2 class="text-center mb-3">Nueva Recepción de Materias Primas</h2>
 
     <!-- Botón para volver al Dashboard -->
-    <a href="{{ route('capturista.dashboard') }}" class="btn btn-outline-danger mb-3">
-        ← Volver al Dashboard
+    <a href="{{ route('capturista.dashboard') }}" class="btn btn-outline-danger mb-3"><i class="fas fa-arrow-left"></i>
+        Volver al Dashboard
     </a>
 
     <form action="{{ route('capturista.recepciones.store') }}" method="POST" enctype="multipart/form-data">
@@ -136,7 +136,6 @@
 
         <!-- Botones -->
         <div class="text-center mt-4 d-flex justify-content-center gap-3">
-            <a href="{{ route('capturista.dashboard') }}" class="btn btn-outline-danger btn-sm px-4">Cancelar</a>
             <button type="submit" class="btn btn-primary btn-sm px-4">Guardar</button>
         </div>
     </form>
